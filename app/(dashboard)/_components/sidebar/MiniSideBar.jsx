@@ -13,32 +13,32 @@ const MiniSideBar = () => {
             </Link>
           </li>
           <li className="flex items-center justify-center hover:bg-[#333] hover:cursor-pointer w-[50px] h-[35px] transition-all delay-75">
-            <Link href="/">
+            <Link href="#">
               <FiCalendar />
             </Link>
           </li>
           <li className="flex items-center justify-center hover:bg-[#333] hover:cursor-pointer w-[50px] h-[35px] transition-all delay-75">
-            <Link href="/">
+            <Link href="#">
               <FiUser />
             </Link>
           </li>
           <li className="flex items-center justify-center hover:bg-[#333] hover:cursor-pointer w-[50px] h-[35px] transition-all delay-75">
-            <Link href="/">
+            <Link href="#">
               <FiUsers />
             </Link>
           </li>
           <li className="flex items-center justify-center hover:bg-[#333] hover:cursor-pointer w-[50px] h-[35px] transition-all delay-75">
-            <Link href="/">
+            <Link href="#">
               <FiCheck />
             </Link>
           </li>
           <li className="flex items-center justify-center hover:bg-[#333] hover:cursor-pointer w-[50px] h-[35px] transition-all delay-75">
-            <Link href="/">
+            <Link href="#">
               <LuCloud />
             </Link>
           </li>
           <li className="flex items-center justify-center hover:bg-[#333] hover:cursor-pointer w-[50px] h-[35px] transition-all delay-75">
-            <Link href="/">
+            <Link href="#">
               <LuGrip />
             </Link>
           </li>

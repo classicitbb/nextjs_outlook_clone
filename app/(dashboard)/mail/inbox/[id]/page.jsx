@@ -126,7 +126,7 @@ const Page = () => {
                                 className="hover:bg-[--seconday-bg] px-[2px] rounded-sm"
                                 key={i}
                               >
-                                <a href="/">{to};</a>
+                                <a href="#">{to};</a>
                               </li>
                             ))}
                           </ul>
@@ -141,7 +141,7 @@ const Page = () => {
                             <p>Cc:</p>
                             <ul className="flex items-center gap-1 text-[rgba(255,255,255,1)]">
                               <li className="hover:bg-[--seconday-bg] px-[2px] rounded-sm">
-                                <a href="/">Anuforo okechukwu</a>
+                                <a href="#">Anuforo okechukwu</a>
                               </li>
                             </ul>
                           </span>

@@ -27,8 +27,8 @@ const LoginPage = () => {
     try {
       const response = await account.createOAuth2Session(
         "github",
-        "https://outlookapp-clone.vercel.app/mail", //success
-        "https://outlookapp-clone.vercel.app" //failure
+        `${window.location.origin}/mail`, //success
+        window.location.origin //failure
       );
       console.log(response);
     } catch (error) {
@@ -41,12 +41,17 @@ const LoginPage = () => {
     try {
       await account.createOAuth2Session(
         "google",
-        "https://outlookapp-clone.vercel.app/mail", //success
-        "https://outlookapp-clone.vercel.app/" //failure
+        `${window.location.origin}/mail`, //success
+        window.location.origin //failure
       );
     } catch (error) {
       throw error;
     }
+  };
+
+  const continueWithoutLogin = (e) => {
+    e.preventDefault();
+    router.push("/mail");
   };
 
   useEffect(() => {
@@ -74,6 +79,14 @@ const LoginPage = () => {
           >
             <AiOutlineGithub className="text-[24px]" />
             Login with Google
+          </button>
+        </div>
+        <div className="flex h-fit bg-[#0a0a0a] w-1/2">
+          <button
+            className="btn w-full justify-center p-5 rounded-[10px] font-bold text-white bg-[#333] border-none flex items-center gap-2"
+            onClick={continueWithoutLogin}
+          >
+            Continue without login (preview)
           </button>
         </div>
       </div>

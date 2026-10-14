@@ -16,13 +16,13 @@ const RightSideBar = () => {
           <div className="flex items-center justify-between  w-[80%] text-white font-[600]">
             <div className="flex gap-3 items-center">
               <Link
-                href="/"
+                href="#"
                 className="leading-10 h-10 border-b-[2px] border-[#69afe5] hover:rounded-sm hover:bg-[--primary-bg] hover:px-2 px-2 transition-all delay-75"
               >
                 Focused
               </Link>
               <Link
-                href="/"
+                href="#"
                 className="leading-10 h-10 hover:bg-[--primary-bg] hover:px-2 px-2 transition-all delay-75 hover:rounded-sm"
               >
                 Other

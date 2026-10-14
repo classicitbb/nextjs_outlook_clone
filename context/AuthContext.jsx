@@ -13,19 +13,19 @@ const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const getAccount = async () => {
-      if (user) {
+      try {
         setUser(await account.get());
+      } catch (error) {
+        setUser(null);
       }
     };
     getAccount();
-  }, [user, router]);
+  }, []);
 
   const logout = async () => {
-    const response = await account.deleteSession("current");
-    console.log(response);
-    if (!user) {
-      router.push("/");
-    }
+    await account.deleteSession("current");
+    setUser(null);
+    router.push("/");
   };
 
   return (

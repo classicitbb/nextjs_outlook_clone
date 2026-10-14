@@ -67,14 +67,14 @@ const TopHeader = () => {
       <div className="w-[99.5%] min-h-20 bg-[--primary-bg] flex flex-col relative">
         <div className="h-[36px] w-full mx-auto bg-[--primary-bg] mb-[4px] items-center flex">
           <div className="flex items-center w-full gap-5 text-sm text-[--mail-text-color] font-[500]">
-            <Link href="/" className="ml-1">
+            <Link href="#" className="ml-1">
               <FiMenu className="w-10 h-6" />
             </Link>
-            <Link href="/" className="border-b-[2px] border-[#69afe5]">
+            <Link href="#" className="border-b-[2px] border-[#69afe5]">
               Home
             </Link>
-            <Link href="/">View</Link>
-            <Link href="/">Help</Link>
+            <Link href="#">View</Link>
+            <Link href="#">Help</Link>
           </div>
         </div>
         <div className="flex items-center gap-3 w-[99.5%] mx-auto bg-[--single-mail-bg] shadow-md  rounded-[5px]  p-[6px] ">
